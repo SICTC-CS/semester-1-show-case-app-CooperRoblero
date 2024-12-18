@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/input_noun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a noun"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+    <EditText
+        android:id="@+id/input_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a place"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Story"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textSize="18sp"
+        android:text="Your story will appear here." />
+</LinearLayout>

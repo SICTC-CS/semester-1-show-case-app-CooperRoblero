@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.showcaseslideshow.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_scifi"
+            app:destination="@id/nav_scifi" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_madlibs"
+            app:destination="@id/nav_madlibs" />
+        <action
+            android:id="@+id/action_nav_home_to_number"
+            app:destination="@id/number" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_scifi"
+        android:name="com.example.showcaseslideshow.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/scifi" >
+        <action
+            android:id="@+id/action_nav_scifi_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_madlibs"
+        android:name="com.example.showcaseslideshow.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_madlibs_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/number"
+        android:name="com.example.showcaseslideshow.Number"
+        android:label="fragment_number"
+        tools:layout="@layout/fragment_number" >
+        <action
+            android:id="@+id/action_number_to_nav_madlibs"
+            app:destination="@id/nav_madlibs" />
+        <action
+            android:id="@+id/action_number_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>
+
+

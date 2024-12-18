@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:padding="16dp"
+
+    android:gravity="center">
+
+
+
+    <!-- Result Text -->
+
+    <TextView
+
+        android:id="@+id/result_text"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Guess a number between 1 and 100!"
+
+        android:textSize="18sp"
+
+        android:gravity="center"
+
+        android:paddingBottom="16dp" />
+
+
+
+    <!-- High Score -->
+
+    <TextView
+
+        android:id="@+id/high_score_text"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="High Score: 0"
+
+        android:textSize="16sp"
+
+        android:gravity="center"
+
+        android:paddingBottom="8dp" />
+
+
+
+    <!-- Score -->
+
+    <TextView
+
+        android:id="@+id/score_text"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Score: 0"
+
+        android:textSize="16sp"
+
+        android:gravity="center"
+
+        android:paddingBottom="8dp" />
+
+
+
+    <!-- Strikes -->
+
+    <TextView
+
+        android:id="@+id/strikes_text"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Strikes: 0/10"
+
+        android:textSize="16sp"
+
+        android:gravity="center"
+
+        android:paddingBottom="16dp" />
+
+
+
+    <!-- Guess Input -->
+
+    <EditText
+
+        android:id="@+id/guess_input"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your guess"
+
+        android:inputType="number"
+
+        android:textAlignment="center"
+
+        android:padding="8dp" />
+
+
+
+    <!-- Guess Button -->
+
+    <Button
+
+        android:id="@+id/guess_button"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Submit Guess"
+
+        android:layout_marginTop="16dp" />
+
+
+
+</LinearLayout>
